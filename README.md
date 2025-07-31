@@ -79,6 +79,6 @@ This project simulates a black-box penetration test against OWASP Juice Shop to 
 
 ## 📸 Screenshots
 
-Screenshots of the lab <a href="(https://github.com/AisyaJalani/Penetration-Testing---OWASP-Juice-Shop/blob/main/Screenshots.md)">here</a>.
+Screenshots of the lab <a href="https://github.com/AisyaJalani/Penetration-Testing---OWASP-Juice-Shop/blob/main/Screenshots.md">here</a>.
 
   

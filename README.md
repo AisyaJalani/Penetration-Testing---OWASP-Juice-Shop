@@ -2,7 +2,7 @@
 
 **Project Type:** Web Application Pentest  
 **Platform:** OWASP Juice Shop (Local Docker Instance)  
-**Tester:** Siti Aisyah Amat Jalani  
+**Tester:** Aisyah Jalani  
 **Date:** July 20, 2025
 **Tools Used:** Burp Suite, Nmap, Firefox, FoxyProxy, Docker
 

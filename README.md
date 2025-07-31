@@ -3,7 +3,7 @@
 **Project Type:** Web Application Pentest  
 **Platform:** OWASP Juice Shop (Local Docker Instance)  
 **Tester:** Siti Aisyah Amat Jalani  
-**Date:** [Insert Date]  
+**Date:** July 20, 2025
 **Tools Used:** Burp Suite, Nmap, Firefox, FoxyProxy, Docker
 
 ---
@@ -41,3 +41,44 @@ This project simulates a black-box penetration test against OWASP Juice Shop to 
   ```http
   GET /api/Feedbacks/2 HTTP/1.1
   Host: localhost:3000
+-	**Fix:** Implement authorization checks for user-owned objects.
+
+⸻
+
+## ⚠️ Vulnerability 2: Stored XSS
+- **Vector:** Search bar input
+- **Payload:** <script>alert("XSS")</script>
+- **Impact:** Executes script on all pages rendering search term
+- **Fix:** Input sanitization and output encoding.
+
+⸻
+
+## 🧨 Vulnerability 3: SQL Injection
+- **Endpoint:** /rest/user/login
+- **Payload:** ' OR 1=1 --
+- **Impact:** Bypasses authentication
+- **Fix:** Use parameterized SQL queries.
+
+⸻
+
+## 🧰 Tools & Technologies
+- Docker (Juice Shop deployment)
+- Burp Suite Community Edition
+- Nikto, Nmap, SQLmap
+- Firefox + FoxyProxy
+
+⸻
+
+## 📝 Lessons Learned
+-	Importance of input validation and access control
+-	Manual testing can uncover logic flaws missed by scanners
+-	Learned to chain enumeration with exploitation
+-	Practiced writing structured pentest reports with technical accuracy
+
+⸻
+
+## 📸 Screenshots
+
+
+
+  

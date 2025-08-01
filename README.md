@@ -27,19 +27,19 @@ This project simulates a black-box penetration test against OWASP Juice Shop to 
 
 | Vulnerability | Severity | Endpoint | CVSS |
 |---------------|----------|----------|------|
-| IDOR          | High     | `/api/Feedbacks/2` | 7.5 |
+| IDOR          | High     | ` /rest/products/2/reviews/` | 7.5 |
 | Stored XSS    | Medium   | Search bar        | 6.1 |
-| SQL Injection | High     | `/rest/user/login` | 8.1 |
+| SQL Injection | High     | ` /rest/user/2` | 8.1 |
 
 ---
 
 ## 🔓 Vulnerability 1: IDOR (Insecure Direct Object Reference)
 
-- **Affected URL:** `/api/Feedbacks/2`  
+- **Affected URL:** ` /rest/user/2`  
 - **Method:** Manipulated feedback ID to access other users' data  
 - **Payload:**  
   ```http
-  GET /api/Feedbacks/2 HTTP/1.1
+  GET /rest/user/2 HTTP/1.1
   Host: localhost:3000
 -	**Fix:** Implement authorization checks for user-owned objects.
 
@@ -47,7 +47,7 @@ This project simulates a black-box penetration test against OWASP Juice Shop to 
 
 ## ⚠️ Vulnerability 2: Stored XSS
 - **Vector:** Search bar input
-- **Payload:** <script>alert("XSS")</script>
+- **Payload:** <script>alert("1")</script>
 - **Impact:** Executes script on all pages rendering search term
 - **Fix:** Input sanitization and output encoding.
 
